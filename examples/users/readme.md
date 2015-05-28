@@ -1,7 +1,13 @@
 Basic isomorphic React app with Baobab-powered data tree cursor.
 
-`brew install nginx forego`
+```
+brew install nginx forego
+```
 
-`npm install`
+```
+npm install
+```
 
-`forego start` 
+```
+forego start
+``` 
