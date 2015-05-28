@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/kompot/rjanko-forms/issues"
   },
-  "homepage": "https://github.com/kompot/rjanko-forms#readme"
+  "homepage": "https://github.com/kompot/rjanko-forms#readme",
+  "dependencies": {
+    "is-my-json-valid": "^2.12.0",
+    "react": "^0.13.3"
+  }
 }

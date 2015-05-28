@@ -1,0 +1,4 @@
+nginx: nginx -p $(pwd) -c $(pwd)/nginx.conf
+node: ./node_modules/.bin/nodemon ./build-server/server.js
+wpClient: ./node_modules/.bin/babel-node ./webpack.devserver.js
+wpServer: ./node_modules/.bin/webpack --watch --config ./webpack.config.server.js
