@@ -20,7 +20,7 @@ function renderHtml(res, data, webpackAssets) {
   res.send(`<!doctype html>\n${html}`);
 }
 
-export default async function(req, res, next, webpackAssets) {
+export default function(req, res, next, webpackAssets) {
   defaultData.addedKey1ThatWorks = 'addedValue1';
 
   const data = new Baobab(defaultData, {
