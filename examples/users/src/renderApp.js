@@ -21,9 +21,13 @@ function renderHtml(res, data, webpackAssets) {
 }
 
 export default async function(req, res, next, webpackAssets) {
+  defaultData.addedKey1ThatWorks = 'addedValue1';
+
   const data = new Baobab(defaultData, {
     syncwrite: true
   });
+
+  //data.select('addedKey2ThatFails').set('addedValue2');
 
   renderHtml(res, data, webpackAssets);
 }

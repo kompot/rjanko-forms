@@ -4,7 +4,8 @@ import {branch} from 'baobab-react/decorators';
 
 @branch({
   cursors: {
-    user: ['user']
+    user: ['user'],
+    data: ''
   }
 })
 export default class User extends React.Component {
@@ -13,6 +14,9 @@ export default class User extends React.Component {
     return (
       <div>
         {this.props.user.username}
+        <pre>
+          {JSON.stringify(this.props.data)}
+        </pre>
       </div>
     );
   }
